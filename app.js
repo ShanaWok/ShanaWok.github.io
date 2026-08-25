@@ -425,7 +425,7 @@ class App {
     renderHome() {
         // Categorías Destacadas (Círculos Interactivos)
        
-        const homeCats = ["Bebidas", "Snacks", "Helados", "Sopas", "Te", "BebidasAlcohol", "Tallarines", "Golosinas" ];
+        const homeCats = ["Bebidas", "Snacks", "Helados", "Sopas", "BebidasAlcohol", "Extras", "Golosinas" ];
         const catsGrid = document.getElementById("home-categories");
         catsGrid.innerHTML = "";
 
@@ -567,9 +567,8 @@ class App {
             "Snacks": "🥓", 
             "Helados": "🍦", 
             "Sopas": "🍜", 
-            "Té": "🍃", 
             "BebidasAlcohol": "🍾", 
-            "Tallarines": "🍝", 
+            "Extras": "➕✨", 
             "Golosinas": "🍭"
         };
         return map[cat] || "🏷️";
