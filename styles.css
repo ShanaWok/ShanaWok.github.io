@@ -3,27 +3,24 @@
    ========================================================================== */
 
 :root {
-    /* Paleta de colores cálida y apetitosa */
-    --primary: #D32F2F; /* Rojo apetitoso principal */
+    --primary: #D32F2F;
     --primary-light: #FF5252;
     --primary-dark: #B71C1C;
-    --accent: #FFC107; /* Dorado/Amarillo cálido */
-    --background: #FAFAFB; /* Fondo crema muy sutil, no blanco puro */
+    --accent: #FFC107;
+    --background: #FAFAFB;
     --bg-gray: #FFFFFF;
     --border-color: #EEEEEE;
-    --text-color: #2C2C2C; /* Gris oscuro, más suave a la vista que el negro puro */
+    --text-color: #2C2C2C;
     --text-muted: #8E8E93;
     --white: #ffffff;
-    --dark-charcoal: #1A1A1A; /* Para botones premium y footer */
+    --dark-charcoal: #1A1A1A;
     
-    /* Sombras modernas (estilo app) */
     --shadow-soft: 0 8px 24px rgba(211, 47, 47, 0.06);
     --shadow-medium: 0 16px 40px rgba(0, 0, 0, 0.08);
     --shadow-hover: 0 20px 40px rgba(211, 47, 47, 0.15);
     
-    /* Transiciones y bordes más amigables */
     --transition-premium: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
-    --border-radius: 16px; /* Bordes más redondeados tipo app de comida */
+    --border-radius: 16px;
 }
 
 * {
@@ -71,7 +68,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 14px 32px;
     font-size: 15px;
     font-weight: 700;
-    border-radius: 30px; /* Botones en forma de píldora (muy modernos) */
+    border-radius: 30px;
     cursor: pointer;
     transition: var(--transition-premium);
     border: 2px solid transparent;
@@ -244,7 +241,6 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: 0 4px 8px rgba(211,47,47,0.3);
 }
 
-/* Menú móvil */
 .mobile-menu-toggle {
     display: none;
     flex-direction: column;
@@ -285,22 +281,21 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ==========================================================================
-   SECCIÓN: INICIO (HERO, BANNER, CATEGORÍAS)
+   SECCIÓN: INICIO (BANNER RECTANGULAR, CATEGORÍAS)
    ========================================================================== */
 
 .hero-carousel {
-    height: 75vh;
+    height: 400px;
     width: 100%;
     position: relative;
     background-color: var(--dark-charcoal);
-    border-radius: 0 0 40px 40px; /* Toque moderno */
     overflow: hidden;
 }
 
 .hero-slide {
     width: 100%;
     height: 100%;
-    background-image: url('https://images.unsplash.com/photo-1552611052-33e04de081de?q=80&w=1920&auto=format&fit=crop'); /* Imagen de comida asiática mucho mejor */
+    background-image: url('https://images.unsplash.com/photo-1552611052-33e04de081de?q=80&w=1920&auto=format&fit=crop');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -313,7 +308,6 @@ h1, h2, h3, h4, h5, h6 {
     left: 0;
     width: 100%;
     height: 100%;
-    /* Gradiente con un toque cálido/rojizo oscuro */
     background: linear-gradient(90deg, rgba(26,26,26,0.9) 0%, rgba(211,47,47,0.3) 100%);
 }
 
@@ -330,14 +324,14 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 13px;
     font-weight: 800;
     letter-spacing: 3px;
-    color: var(--accent); /* Dorado */
+    color: var(--accent);
     display: block;
     margin-bottom: 20px;
     text-transform: uppercase;
 }
 
 .hero-title {
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 800;
     line-height: 1.1;
     color: var(--white);
@@ -350,10 +344,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero-subtitle {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
     color: #F5F5F7;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     line-height: 1.6;
 }
 
@@ -362,10 +356,9 @@ h1, h2, h3, h4, h5, h6 {
     gap: 15px;
 }
 
-/* Categorías */
 .section-container {
     max-width: 1400px;
-    margin: 80px auto;
+    margin: 60px auto;
     padding: 0 40px;
 }
 
@@ -434,7 +427,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ==========================================================================
-   CARDS DE PRODUCTOS (GRID PREMIUM RESTAURANTE)
+   CARDS DE PRODUCTOS
    ========================================================================== */
 
 .products-grid {
@@ -460,7 +453,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .product-image-container {
-    aspect-ratio: 1/1; /* Cuadrado, mejor para platos de comida */
+    aspect-ratio: 1/1;
     width: 100%;
     overflow: hidden;
     border-radius: 12px;
@@ -576,12 +569,11 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: 0 6px 15px rgba(211,47,47,0.3);
 }
 
-/* Banner secundario Split */
 .promo-banner-split {
     display: grid;
     grid-template-columns: 1fr 1fr;
     min-height: 500px;
-    background: var(--dark-charcoal); /* Fondo oscuro elegante */
+    background: var(--dark-charcoal);
     border-radius: 30px;
     margin-top: 100px;
     overflow: hidden;
@@ -589,7 +581,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .promo-image {
-    background-image: url('https://images.unsplash.com/photo-1555126634-323283e090fa?q=80&w=1000&auto=format&fit=crop'); /* Imagen de Wok/Fuego */
+    background-image: url('https://images.unsplash.com/photo-1555126634-323283e090fa?q=80&w=1000&auto=format&fit=crop');
     background-size: cover;
     background-position: center;
 }
@@ -635,7 +627,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ==========================================================================
-   SECCIÓN: CATÁLOGO (FILTROS Y SIDEBAR)
+   CATÁLOGO
    ========================================================================== */
 
 .catalog-layout {
@@ -695,7 +687,6 @@ h1, h2, h3, h4, h5, h6 {
     gap: 15px;
 }
 
-/* Checkboxes modernos */
 .filter-checkbox-label {
     display: flex;
     align-items: center;
@@ -799,7 +790,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .cart-item-img {
     width: 100px;
-    height: 100px; /* Cuadrado para comida */
+    height: 100px;
     object-fit: cover;
     border-radius: 10px;
 }
@@ -879,7 +870,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .cart-item-delete-btn:hover { background: #ff3b30; color: white; }
 
-/* Panel Resumen */
 .cart-summary-section {
     background-color: var(--white);
     border-radius: 20px;
@@ -931,7 +921,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ==========================================================================
-   PERFIL Y AUTENTICACIÓN
+   PERFIL Y AUTH
    ========================================================================== */
 
 .auth-wrapper {
@@ -989,7 +979,6 @@ h1, h2, h3, h4, h5, h6 {
     text-decoration: underline;
 }
 
-/* Dashboard del Perfil */
 .profile-dashboard {
     max-width: 1000px;
     margin: 60px auto;
@@ -1019,7 +1008,7 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 50%;
     object-fit: cover;
     background: var(--background);
-    border: 4px solid var(--primary); /* Anillo rojo premium */
+    border: 4px solid var(--primary);
     padding: 4px;
 }
 
@@ -1245,7 +1234,7 @@ h1, h2, h3, h4, h5, h6 {
 .form-grid .full-width { grid-column: span 2; }
 
 /* ==========================================================================
-   COMPONENTES EXTRAS: TOAST, BUSCADOR Y MOCKUP
+   COMPONENTES EXTRAS: TOAST, BUSCADOR
    ========================================================================== */
 
 .toast-container {
@@ -1274,7 +1263,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .toast.show { transform: translateY(0); opacity: 1; }
 
-/* Buscador Overlay */
 .search-overlay {
     position: fixed;
     top: 0;
@@ -1328,7 +1316,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 .close-btn:hover { background: var(--primary); color: white; }
 
-/* Estados Vacíos */
 .empty-state {
     text-align: center;
     padding: 100px 20px;
@@ -1348,7 +1335,7 @@ h1, h2, h3, h4, h5, h6 {
    ========================================================================== */
 
 .main-footer {
-    background-color: var(--dark-charcoal); /* Reemplazamos ese rojo quemado raro por un carbón elegante */
+    background-color: var(--dark-charcoal);
     color: #F5F5F7;
     padding: 80px 40px 40px;
     margin-top: auto;
@@ -1418,7 +1405,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ==========================================================================
-   SISTEMA DE RESPONSIVE COMPLETO (CELULARES & TABLETS)
+   SISTEMA RESPONSIVE (AQUÍ ESTÁ LA ESTRUCTURA EXACTA DE TU IMAGEN)
    ========================================================================== */
 
 @media (max-width: 1024px) {
@@ -1443,7 +1430,6 @@ h1, h2, h3, h4, h5, h6 {
     .cart-layout-container { grid-template-columns: 1fr; gap: 40px; padding: 0 25px; }
     .footer-grid { grid-template-columns: 1fr; gap: 40px; }
     
-    .hero-title { font-size: 45px; }
     .admin-dashboard-container { grid-template-columns: 1fr; }
     .admin-sidebar { padding: 30px 25px; }
     .admin-main-content { padding: 30px 25px; }
@@ -1466,13 +1452,61 @@ h1, h2, h3, h4, h5, h6 {
     }
     .nav-menu.active { left: 0; }
     .mobile-menu-toggle { display: flex; }
-    .promo-banner-split { grid-template-columns: 1fr; min-height: auto; border-radius: 20px; }
-    .promo-image { height: 300px; }
+    
+    /* 1. Banner Delgado en Celular */
+    .hero-carousel {
+        height: 180px; 
+    }
     .hero-content { margin-left: 5%; padding: 10px; }
-    .hero-title { font-size: 38px; }
-    .section-container { padding: 0 20px; margin: 50px auto; }
+    .hero-title { font-size: 28px; margin-bottom: 10px; }
+    .hero-subtitle { font-size: 13px; margin-bottom: 15px; }
+    
+    .section-container { padding: 0 12px; margin: 35px auto; }
+    .section-title { font-size: 20px; text-align: left; }
+    .section-header-flex { flex-direction: column; align-items: flex-start; gap: 15px; }
+
+    /* 2. Categorías exactamente en LÍNEAS DE 3 */
+    .categories-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px;
+    }
+    .category-card {
+        padding: 12px 4px;
+        gap: 8px;
+    }
+    .category-icon {
+        width: 48px;
+        height: 48px;
+        font-size: 22px;
+    }
+    .category-name {
+        font-size: 11px;
+    }
+
+    /* 3. Productos exactamente en LÍNEAS DE 2 */
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+    .product-card {
+        padding: 10px;
+    }
+    .product-title {
+        font-size: 13px;
+        margin-bottom: 5px;
+    }
+    .product-price {
+        font-size: 15px;
+    }
+    .add-cart-btn-round {
+        width: 34px;
+        height: 34px;
+    }
+
+    .promo-banner-split { grid-template-columns: 1fr; min-height: auto; border-radius: 15px; }
+    .promo-image { height: 220px; }
     .form-grid { grid-template-columns: 1fr; }
     .form-grid .full-width { grid-column: span 1; }
-    .cart-item-row { grid-template-columns: 1fr; text-align: center; justify-items: center; }
-    .cart-item-actions { align-items: center; text-align: center; gap: 15px;}
+    .cart-item-row { grid-template-columns: 1fr; text-align: center; justify-items: center; padding: 15px; }
+    .cart-item-actions { align-items: center; text-align: center; gap: 15px; }
 }
